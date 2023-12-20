@@ -1,3 +1,5 @@
+/* Google font Import */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:opsz@9..40&family=Lexend+Deca&display=swap');
 body {
     height: 100%;
     width: 100%;
@@ -7,6 +9,9 @@ body {
     padding: 0;
     margin: 0;
     background: rgba(46, 196, 182,0.04);
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .main {
     max-width: 1040px;
@@ -16,27 +21,26 @@ body {
     justify-content: space-between;
     gap: 20px;
     padding: 20px 10% 30px 10% ;
+    font-family: 'DM Sans', sans-serif;
 }
 .intro {
     width: calc(50% - 30px);
 }
 h1 {
     color: var(--CL-Black, #000B0A);
-    font-family: Brown;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px; /* 125% */
+    line-height:  125%;
     letter-spacing: -0.8px;
 }
 .intro p {
     color: var(--CL-Grey, #737373);
     max-width: 350px;
-    font-family: Brown;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 156.25% */
+    line-height: 156.25%;
 }
 form {
     width: calc(50% - 10px);
@@ -52,7 +56,7 @@ label {
     font-weight: 600;
     font-size: 13px;
 }
-input, select {
+input, select, option {
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -64,7 +68,7 @@ input, select {
 a {
     color: #2EC4B6;
 }
-input:hover {
+input:hover, select:hover {
     border: 2px solid #2EC4B6;
 }
 button {
@@ -91,8 +95,8 @@ button {
         width: 90%;
         margin-bottom: 20px;
     }
-    .intro h1 {
-        line-height: 40px;
+    .intro h1, .intro p {
+        line-height: 110%;
     }
     .intro img {
         width: 70px;
