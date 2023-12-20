@@ -1,21 +1,24 @@
 body {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     background: rgba(46, 196, 182,0.04);
 }
 .main {
+    max-width: 1040px;
     height: auto;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding: 20px 10% 30px 10% ;
 }
 .intro {
-    width: calc(50% - 10px);
+    width: calc(50% - 30px);
 }
 h1 {
     color: var(--CL-Black, #000B0A);
@@ -82,18 +85,20 @@ button {
 }
 @media screen and (max-width: 540px) {
     .main{
-        display: block;
-        margin: 0 auto;
+        flex-direction: column;
     }
     .intro{
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
     }
+    .intro h1 {
+        line-height: 40px;
+    }
     .intro img {
-        width: 100px;
+        width: 70px;
     }
     form {
-        width: 100%;
+        width: 90%;
     }
     .flex-lg {
         display: block;
